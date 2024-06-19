@@ -9,7 +9,6 @@ export const Layout = ({ header, nav, main, footer }) => {
                   "nav footer"`}
       gridTemplateRows={"200px 1fr 30px"}
       gridTemplateColumns={"150px 1fr"}
-      h="100vh"
       gap="2"
       color="blackAlpha.700"
       fontWeight="bold"
@@ -22,7 +21,7 @@ export const Layout = ({ header, nav, main, footer }) => {
       <GridItem pl="2" bg="pink.300" area={"nav"}>
         {nav}
       </GridItem>
-      <GridItem pl="2" bg="green.300" area={"main"}>
+      <GridItem area={"main"}>
         {main}
       </GridItem>
       <GridItem pl="2" bg="blue.300" area={"footer"}>

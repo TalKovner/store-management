@@ -1,5 +1,6 @@
 import { Layout } from "./Layout";
-import {Header} from './Header'
+import { Header } from "./screens/Header";
+import ProductsScreen from "./screens/Products.screen";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <Layout
         footer={() => {}}
         header={<Header />}
-        main={() => {}}
+        main={<ProductsScreen />}
         nav={() => {}}
       />
     </>
